@@ -1,0 +1,114 @@
+@font-face
+{
+		font-family: 'Raleway';
+		src: url('Raleway/raleway.eot');
+		src: url('Raleway/raleway.eot?#iefix') format('embedded-opentype'),
+			 url('Raleway/raleway.woff') format('woff'),
+			 url('Raleway/raleway.ttf') format('truetype'),
+			 url('Raleway/raleway.svg#Raleway');
+		font: normal;
+		font-style: normal;
+}
+
+header
+{
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-left: 15px;
+}
+
+Nav ul
+{
+	list-style-type: none;
+	display: flex;
+}
+
+nav li
+{
+	margin-right: 80px;
+}
+
+nav a 
+{
+	font-size: 1em;
+	color: black;
+	padding-bottom: 3px;
+	text-decoration: none;
+}
+
+nav a:hover
+{
+	color: #0065FC;
+
+}
+
+#Filtres
+{
+	list-style-type: none;
+	display: flex;
+	margin-right: 15px;
+}
+
+.Bouton_Economique
+{
+	height: 25px;
+	position: ;
+	right: 15px;
+	bottom: 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+	font-size: 1.5em;
+	text-align: center;
+	padding:;
+	color: black;
+	text-decoration: none;
+
+}
+
+body
+{
+	background-color: white;
+	color: black;
+	font-family: raleway; serif;
+	font-weight: normal;
+	text-transform: none;
+	
+
+}
+
+
+Section
+{
+	background-color: #F2F2F2;
+	font-family: raleway; serif;
+	font-weight: normal;
+	text-transform: none;
+	border: 1px black solid;
+	border-radius: 20px;
+	display: flex;
+
+	
+}
+
+
+footer
+{
+	background-color: #F2F2F2;
+	font-family: ralway; serif;
+	
+}
+
+
+#Assistance
+{
+	font-family: raleway; serif;
+	font-weight: normal;
+	display: flex;
+	
+
+
+}
+
+
