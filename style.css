@@ -1,3 +1,10 @@
+
+
+
+
+
+/*----page général----*/
+
 @font-face
 {
 		font-family: 'Raleway';
@@ -10,105 +17,527 @@
 		font-style: normal;
 }
 
-header
-{
-	background-color: white;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
-	margin-left: 15px;
-}
-
-Nav ul
-{
-	list-style-type: none;
-	display: flex;
-}
-
-nav li
-{
-	margin-right: 80px;
-}
-
-nav a 
-{
-	font-size: 1em;
-	color: black;
-	padding-bottom: 3px;
-	text-decoration: none;
-}
-
-nav a:hover
-{
-	color: #0065FC;
-
-}
-
-#Filtres
-{
-	list-style-type: none;
-	display: flex;
-	margin-right: 15px;
-}
-
-.Bouton_Economique
-{
-	height: 25px;
-	position: ;
-	right: 15px;
-	bottom: 5px;
-	border: 1px solid black;
-	border-radius: 5px;
-	font-size: 1.5em;
-	text-align: center;
-	padding:;
-	color: black;
-	text-decoration: none;
-
-}
-
 body
 {
-	background-color: white;
+	font-family: raleway, serif;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-top: 3%;
+}
+
+a:visited, a:link, a
+{
+	text-decoration: none;
+	color: initial;
+}
+/*-----en-tete-----*/
+
+.logo
+{
+	display: flex;
+	width: 8vw;
+	height: 8ws;
+}
+
+.menu_logo
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: -3vw;
+}
+
+.menu
+{
+	display: flex;
+	list-style-type: none;
+	font-size: 1vw;
 	color: black;
-	font-family: raleway; serif;
-	font-weight: normal;
-	text-transform: none;
-	
+}
+
+li
+{
+	margin-left: 5vw;
+}
+
+.inscription a 
+{
+	color: #0065FC;
+}
+
+}
+.liste_menu:hover
+{
+	color: #0065fc;
+	border-top: 2px solid;
+	padding-top: 3.28vw;
 
 }
 
-
-Section
+.effect_menu
 {
-	background-color: #F2F2F2;
-	font-family: raleway; serif;
-	font-weight: normal;
-	text-transform: none;
-	border: 1px black solid;
+	display: inline-block;
+	width: 130%;
+	text-align: center;
+}
+/*-----textes----*/
+.texte_1
+{
+	font-family: raleway, serif;
+	font-size: 1.4vw;
+	margin-top: 1%;
+}
+
+.texte_2
+{
+	font-size: 1vw;
+	margin-top: -1%;
+}
+
+/*----filtre et recherche---*/
+.bloc_recherche
+{
+	display: flex;
+	margin-top: 1vw;
+}
+
+.fa-map-marker-alt
+{
+	font-size: 1vw;
+	text-align: center;
+	border: 1px solid #f2f2f2;
+	background-color: #f2f2f2;
+	border-radius: 15px 0px 0px 15px;
+	padding: 1%;
+}
+
+.barre_recherche
+{
+	border: none;
+	border: 1px solid #f2f2f2;
+	font-family: raleway, serif;
+	font-size: 1.1vw;
+	padding: 0.5em 1 em 0.5em 1em;
+}
+
+input::placeholder
+{
+	color: black;
+	opacity: 1;
+}
+
+input:focus
+{
+	outline: none;
+}
+
+.bouton
+{
+	border: none;
+	color: white;
+	border-radius: 0px 15px 15px 0px;
+	background-color: #0065fc;
+	font-family: raleway, serif;
+	font-size: 1.2vw;
+	padding: 0.5em 1 em 0.5em 1em;
+}
+
+.fa-search
+{
+	visibility: hidden;
+}
+
+.bouton:hover
+{
+	cursor: pointer;
+}
+
+.bloc_filtres
+{
+	display: flex;
+	align-items: center;
+	font-family: raleway, serif;
+	margin-top: 1.5%;
+	white-space: nowrap;
+}
+
+.titre_filtres
+{
+	margin-right: 1.5vw;
+	font-size: 1vw;
+}
+
+.filtres
+{
+	display: flex;
+	font-size: 1vw;
+	align-items: center;
+	border: 2px solid #f2f2f2;
+	border-left: none;
+	border-right: 1vw;
+	border-radius: 30px;
+	padding-right: 1vw;
+	margin-right: 2vw;
+}
+
+.filtres:hover
+{
+	background-color:#DEEBFF;
+	cursor: pointer;
+}
+
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog
+{
+	display: flex;
+	color: #0065fc;
+	font-size: 1.4vw;
+	padding: 0.6em;
+	background-color:#DEEBFF;
+	border-radius: 50%;
+	margin-right: 1vw;
+}
+
+.fa-money-bill-wave
+{
+	padding-right: 0.52em;
+	padding-left: 0.52em;
+}
+
+.fa-child
+{
+	padding-right: 0.75em;
+	padding-left: 0.75em;
+}
+
+.info
+{
+	display: flex;
+	font-size: 1vw;
+	margin-top: 1.5%;
+}
+
+.fa-info
+{
+	color: #0065fc;
+	font-size: 0.9vw;
+	border: 2px solid #f2f2f2;
+	border-radius: 50%;
+	padding: 0.4em 0.7em;
+	margin-right: 1em;
+}
+
+/*----bloc populaire et hébergement---*/
+.bloc_hebergement_populaire
+{
+	display: flex;
+}
+
+/*----Hébergement---*/
+
+.bloc_hebergement_photo
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 65%;
+	background-color: #f2f2f2;
 	border-radius: 20px;
+	margin-top: 2%;
+	padding: 1.5%
+}
+
+.photo_hotel
+{
+	display: flex;
+	position: relative;
+	margin-bottom: 3%;
+}
+
+.titre_hébergement
+{
+	width: 70%;
+	position: relative;
+	margin-bottom: 3%;
+}
+
+.Afficher_plus
+{
+	width: 100%;
+	font-family: raleway, serif;
+	font-size: 1.2vw;
+	margin-top: -1%;
+}
+
+.parametre_photos
+{
+	display: flex;
+	width: 18vw;
+	height: 10vw;
+	object-fit: cover;
+	border: 5px solid white;
+	border-radius: 25px 25px 10px 10px;
+}
+
+.description
+{
+	display: flex;
+	flex-direction: column;
+	font-size: 1vw;
+	background: white;
+	position: absolute;
+	text-align: left;
+	color: black;
+	border-radius: 0px 0px 25px 25px;
+	bottom: -5%;
+	width: 95.1%;
+	height: 30%;
+	padding-left: 5%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	line-height: 1.2;
+}
+
+.fa-star
+{
+	color: #0065fc;
+	font-size: 0.8em;
+}
+/*----bloc populaire---*/
+
+.bloc_populaires
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 25%;
+	background: #F2F2F2;
+	border-radius: 20px 20px 20px 20px;
+	padding: 0px 20px 2Opx 20px;
+}
+
+.photo_popu
+{
+	display: flex;
+	position: relative;
+	margin-left: 6%;
+	margin-right: 6%;
+	margin-bottom: 6%;
+}
+
+.titre_1_popu
+{
+	font-family: raleway, serif;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.titre_populaires
+{
+	font-family: raleway, serif;
+	font-size: 1.5vw;
+	margin-bottom: 2%;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	margin-left: 6%;
+}
+
+.fa-chart-line
+{
+	font-size: 1.5vw;
+	margin-right: 10%;
+}
+
+.parametre_photos_popu
+{
+	width: 32%;
+	height: 98%;
+	object-fit: cover;
+	border: 5px solid white;
+	border-radius: 25px 0px 0px 25px;
+}
+
+.description_popu
+{
+	border: 1px solid #F2F2F2;
+	background: white;
+	padding: 5px 0px 2px 5px;
+	border-radius: 15px 15px 15px 15px;
+	box-shadow: 3px 3px 3px #F2F2F2;
+	width: 100%;
+	height: 120px;
+	display: flex;
+	align-items: flex-start;
+}
+}
+
+.photo_popu a 
+{
 	display: flex;
 
-	
 }
 
+/*----bloc activités---*/
+
+.bloc_activités
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 65%;
+	background-color: white;
+	border-radius: 20px;
+	margin-top: 2%;
+	padding: 1.5%;
+}
+
+.bloc_activités_1
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.photo_activité
+{
+	display: flex;
+	position: relative;
+	max-height: 35vw;
+	min-width: 23.5vw;
+}
+
+.titre_activités_1
+{
+	font-family: raleway,serif;
+	font-size: 1.5vw;
+	margin-top: 2%;
+	margin-bottom: 0.5%;
+}
+
+.parametre_photos_activités_1
+{
+	display: flex;
+	width: 21vw;
+	height: 25vw;
+	object-fit: cover;
+	border-radius: 25px 25px 25px 25px;
+}
+.parametre_photos_activités_2
+{
+	display: flex;
+	width: 21vw;
+	height: 18vw;
+	object-fit: cover;
+	border-radius: 25px 25px 25px 25px;
+
+}
+
+.écart_1
+{
+	display: flex;
+	margin-top: 19%;
+}
+
+
+.parametre_photos_activités_3
+{
+	display: flex;
+	width: 21vw;
+	height: 12vw;
+	object-fit: cover;
+	border-radius: 25px 25px 25px 25px;
+}
+
+.parametre_photos_activités_4
+{
+	display: flex;
+	width: 21vw;
+	height: 25vw;
+	object-fit: cover;
+	border-radius: 25px 25px 25px 25px;
+}
+
+.parametre_photos_activités_5, .parametre_photos_activités_6
+{
+	display: flex;
+	width: 21vw;
+	height: 15vw;
+	object-fit: cover;
+	border-radius: 25px 25px 25px 25px;
+}
+
+.écart_2
+{
+	display: flex;
+	margin-top: 19%;
+}
+
+.description_activités
+{
+	font-family: raleway, serif;
+	font-size: 1vw;
+	background: white;
+	position: absolute;
+	text-align: left;
+	color: black;
+	border-radius: 0px 0px 25px 25px;
+	bottom: -1%;
+	width: 19vw;
+	height: 3.2vw;
+	padding-top: 5%;
+	padding-left: 5%;
+}
+
+
+/*----footer----*/
 
 footer
 {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: left;
 	background-color: #F2F2F2;
-	font-family: ralway; serif;
-	
+	margin-top: 5%;
+	margin-left: -3%;
+	margin-right: -3.2%;
+	padding-bottom: 10%;
+	max-height: 10vw;
+}
+
+.Bloc_footer_1
+{
+	margin-left: 3%;
+	margin-top: 2%;
+}
+.Bloc_footer_2, .Bloc_footer_3
+{
+	width: 25%;
+	margin-top: 2%;
+	margin-left: 2%;
 }
 
 
-#Assistance
+.footer_paragraphe_
 {
-	font-family: raleway; serif;
-	font-weight: normal;
-	display: flex;
-	
+	font-family: raleway, serif;
+	font-size: 1vw;
+	margin-bottom: 3%;
+	font-weight: bold;
 
+}
 
+.footer_paragraphe_2
+{
+	font-family: raleway, serif;
+	line-height: 2;
+	font-size: 1vw;
+}
+
+footer a:hover
+{
+	text-decoration: underline;
 }
 
 
