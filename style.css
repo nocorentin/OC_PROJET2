@@ -25,12 +25,10 @@ a:visited, a:link, a
 	text-decoration: none;
 	color: initial;
 }
-
 * 
 {
   box-sizing: border-box;
 }
-
 /*-------------------- header--------------------------------*/
 
 .logo
@@ -247,8 +245,8 @@ input:focus
 
 #liste_logements h2
 {
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-top: 30px;
+	margin-bottom: 10px;
 }
 
 #Hébergements_Marseille
@@ -325,7 +323,7 @@ input:focus
 
 #Hébergements_Marseille article p
 {
-	margin-top: 0px;
+	margin-top: -5px;
 	margin-bottom: 3px;
 
 }
@@ -381,7 +379,7 @@ input:focus
 	width: 100%;
 }
 
-#titre_plus_popu h2
+#titre_plus_popu h3
 {
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -413,7 +411,7 @@ input:focus
 {
 	flex: 1 1 40%;
 	height: 98%;
-	width: 32%;
+	width: 20%;
 	border-radius: 13px 0px 0px 13px;
 	object-fit: cover;
 }
@@ -429,9 +427,15 @@ input:focus
 	font-size: 70%;
 }
 
+ #liste_logements_populaire article .informations p
+	{
+		margin-top: -2px;
+		margin-bottom: 5px;
+	}
+
 #liste_logements_populaire article .note_etoiles
 {
-	padding-top: 15px;
+	padding-top: 5px;
 }
 
 #liste_logements_populaire article .fa-star (ETOILE BLEU)
@@ -447,15 +451,124 @@ input:focus
 
 /*--------------------------------Activités--------------------*/
 
+#Activités
+{
+	flex-wrap: wrap;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
 
+#Bloc_activités
+{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
 
+#Activités a:link
+{
+	text-decoration: none;
+}
 
+#Activités a
+{
+	color: black;
+}
 
+#Bloc_activités div
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
 
+#Bloc_activités h3
+{
+	font-size: 85%;
+	margin-left: 10px;
+}
 
+.simple
+{
+	flex-wrap: nowrap;
+	border: 1px solid #F2F2F2;
+	border-radius: 22px 22px 22px 22px;
+	box-shadow: 3px 3px 3px #F2F2F2;
+	height: 320px;
+	width: 24%;
+}
 
+.simple img
+{
+	flex-wrap: wrap;
+	object-fit: cover;
+	border-radius: 20px 20px 0px 0px;
+	height: 86%;
+	width: 100%;
+}
 
+.double
+{
+	flex-wrap: wrap;
+	border: 1px solid #F2F2F2;
+	border-radius: 22px 22px 22px 22px;
+	box-shadow: 3px 3px 3px #F2F2F2;
+	height: 150px;
+	width: 250px;
+}
 
+.double img
+{
+	flex-wrap: nowrap;
+	object-fit: cover;
+	border-radius: 20px 20px 0px 0px;
+	height: 70%;
+	width: 100%;
+}
+
+/*-------------------------------Footer-------------------*/
+
+footer
+{
+	display: flex;
+	flex-wrap: wrap;
+	background: #F2F2F2;
+	background-size: cover;
+	margin-left: -30px;
+	margin-right: 70px;
+	margin-bottom: -30px;
+	width: 100%;
+}
+
+footer div
+{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-right: 30px;
+	width: 430px;
+}
+
+footer h3
+{
+	font-weight: bold;
+	margin: 20px 40px 0px 40px;
+}
+
+footer ul
+{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+footer li
+{
+	list-style: none;
+	padding: 5px;
+}
 
 
 
