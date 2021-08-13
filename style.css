@@ -25,6 +25,12 @@ a:visited, a:link, a
 	text-decoration: none;
 	color: initial;
 }
+
+* 
+{
+  box-sizing: border-box;
+}
+
 /*-------------------- header--------------------------------*/
 
 .logo
@@ -80,7 +86,6 @@ li
 .texte_1
 {
 	font-family: raleway, serif;
-	font-size: 20px;
 	margin-top: 0.16px;
 }
 
@@ -229,3 +234,231 @@ input:focus
 	padding: 6px 11px;
 	margin-right: 16px;
 }
+
+/*---------------------------Liste hebergements Marseille et les plus popu------------*/
+
+#liste_logements
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+#liste_logements h2
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#Hébergements_Marseille
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: #F2F2F2;
+	border-radius: 20px 20px 20px 20px;
+	padding: 0px 20px 20px 20px;
+	width: 73%;
+}
+
+#logement_dispo_ligne_1
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+#logement_dispo_ligne_2
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+#Hébergements_Marseille article
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	background: white;
+	border: 1px solid #F2F2F2;
+	border-radius: 20px 20px 20px 20px;
+	box-shadow: 2px 2px 2px #F2F2F2;
+	height: 180px;
+	width: 260px;
+}
+
+#Hébergements_Marseille a:link
+{
+	text-decoration: none;
+}
+
+#Hébergements_Marseille a
+{
+	color: black;
+}
+
+#Hébergements_Marseille article img
+{
+	object-fit: cover;
+	padding: 5px 5px 0px 5px;
+	border-radius: 20px 20px 0px 0px;
+	height: 60%;
+	width: 100%;
+}
+
+#Hébergements_Marseille article .informations
+{
+	display: flex;
+	flex-direction: column;
+	height: 40%;
+	width: 90%;
+	padding: 5px 5px 5px 15px;
+	padding-left: 15px;
+	font-size: 14px;
+}
+
+#Hébergements_Marseille article p
+{
+	margin-top: 0px;
+	margin-bottom: 3px;
+
+}
+
+#Hébergements_Marseille article .note_etoiles
+{
+	display: flex;
+}
+
+#Hébergements_Marseille .fa-star
+{
+	color: #0065FC;
+}
+
+#Hébergements_Marseille 
+{
+	
+}
+
+#Hébergements_Marseille p
+{
+	font-size: 17px;
+	font-weight: bold;
+}
+
+/*------------------------------ + populaires---------------*/
+
+#logemnts_populaire
+{
+	display: flex;
+	flex-wrap: wrap;
+	background: #F2F2F2;
+	padding: 0px 20px 20px 20px;
+	border-radius: 20px 20px 20px 20px;
+	width: 25%;
+}
+
+#logemnts_populaire a:link
+{
+	text-decoration: none;
+}
+
+#logemnts_populaire a
+{
+	color: black;
+}
+
+#titre_plus_popu
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+#titre_plus_popu h2
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 22px;
+}
+
+#liste_logements_populaire
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 80%;
+}
+
+#liste_logements_populaire article
+{
+	display: flex;
+	align-items: flex-start;
+	background: white;
+	border: 1px solid #F2F2F2;
+	border-radius: 15px 15px 15px 15px;
+	padding: 5px 0px 2px 5px;
+	box-shadow: 3px 3px 3px #F2F2F2;
+	height: 120px;
+	width: 100%;
+}
+
+#liste_logements_populaire article img
+{
+	flex: 1 1 40%;
+	height: 98%;
+	width: 32%;
+	border-radius: 13px 0px 0px 13px;
+	object-fit: cover;
+}
+
+#liste_logements_populaire article .informations
+{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	flex: 1 1 60%;
+	padding-left: 10px;
+	padding-top: 5px;
+	font-size: 70%;
+}
+
+#liste_logements_populaire article .note_etoiles
+{
+	padding-top: 15px;
+}
+
+#liste_logements_populaire article .fa-star (ETOILE BLEU)
+{
+
+}
+
+#liste_logements_populaire article . ETOILE GRISE
+{
+
+}
+
+
+/*--------------------------------Activités--------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
