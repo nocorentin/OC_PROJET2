@@ -1,4 +1,6 @@
-/*----page général----*/font-face
+/*-----------------------------Font Face et body--------------------------*/
+
+font-face
 {
 		font-family: 'Raleway';
 		src: url('Raleway/raleway.eot');
@@ -10,44 +12,87 @@
 		font-style: normal;
 }
 
+body
+{
+	font-family: raleway, serif;
+	margin-left: 20px;
+	margin-right:20px;
+	margin-top: 20px;
+}
 
-                           /* header*/
+a:visited, a:link, a
+{
+	text-decoration: none;
+	color: initial;
+}
+/*-------------------- header--------------------------------*/
 
-#bloc_page
+.logo
+{
+	display: flex;
+	width: 115.2px;
+	height: 115.2px;
+}
+
+.menu_logo
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1px;
+}
+
+.menu
 {
 	display: flex;
 	list-style-type: none;
-	justify-content: space-between;
-	align-items: flex-start;
-	margin-top: 0px;
-	padding-left: 0px;
-	width: 100%;
-}
-
-nav
-{
-	position: relative;
-	display: flex;
-	flex-wrap: wrap-reverse;
-}
-
-a:link
-{
-	text-decoration: none;
-}
-
-nav #inscription a
-{
-	color: #0065FC;
-	font-weight: bold;
-}
-
-nav #lien_hebergement, #lien_activité a
-{
+	font-size: 14px;
 	color: black;
 }
 
-/*-----------------recherche--------------*/
+li
+{
+	margin-left: 72px;
+}
+
+.inscription a 
+{
+	color: #0065FC;
+}
+
+}
+.liste_menu:hover
+{
+	color: #0065fc;
+	border-top: 2px solid;
+	padding-top: 47px;
+
+}
+
+.effect_menu
+{
+	display: inline-block;
+	width: 130%;
+	text-align: center;
+}
+/*-------------------------------------Titres-------------------*/
+
+.texte_1
+{
+	font-family: raleway, serif;
+	font-size: 20px;
+	margin-top: 0.16px;
+}
+
+.texte_2
+{
+	font-size: 14px;
+	margin-top: 0.20px;
+	color: grey;
+}
+
+
+/*-----------------recherche---------------------------------*/
 
 .bloc_recherche
 {
@@ -78,6 +123,7 @@ input::placeholder
 {
 	color: black;
 	opacity: 1;
+	font-weight: bold;
 }
 
 input:focus
@@ -104,4 +150,82 @@ input:focus
 .bouton:hover
 {
 	cursor: pointer;
+}
+
+/*-------------------------------Filtres-------------------------*/
+
+.bloc_filtres
+{
+	display: flex;
+	align-items: center;
+	font-family: raleway, serif;
+	margin-top: 0.30px;
+	white-space: nowrap;
+	font-weight: bold;
+}
+
+.titre_filtres
+{
+	margin-right: 21px;
+	font-size: 14px;
+}
+
+.filtres
+{
+	display: flex;
+	font-size: 14px;
+	align-items: center;
+	border: 2px solid #f2f2f2;
+	border-left: none;
+	border-right: 14px;
+	border-radius: 30px;
+	padding-right: 14px;
+	margin-right: 28px;
+}
+
+.filtres:hover
+{
+	background-color:#DEEBFF;
+	cursor: pointer;
+}
+
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog
+{
+	display: flex;
+	color: #0065fc;
+	font-size:20px;
+	padding: 10px;
+	background-color:#DEEBFF;
+	border-radius: 50%;
+	margin-right: 14px;
+}
+
+.fa-money-bill-wave
+{
+	padding-right: 8px;
+	padding-left: 8px;
+}
+
+.fa-child
+{
+	padding-right: 12px;
+	padding-left: 12px;
+}
+
+.info
+{
+	display: flex;
+	font-size: 14px;
+	margin-top: 10px;
+	color: grey;
+}
+
+.fa-info
+{
+	color: #0065fc;
+	font-size: 13px;
+	border: 2px solid #f2f2f2;
+	border-radius: 50%;
+	padding: 6px 11px;
+	margin-right: 16px;
 }

@@ -7,54 +7,66 @@
 		<title>Reservia</title>
 	</head>
 
-<!----------logo et bloc Barre de recherche et filtres------>
-<body>
-
-	<div id="bloc_page">
-		<header>
-			<div id="titre_principal">
-				<div id="logo">
-					<img src="logo/Reservia.svg" alt="logo reservia" />
-				</div>
-			</div>
-			<nav>
-				<ul>
-					<li><a href="#">Hébergements</a></li>
-					<li><a href="#">Activités</a></li>
-					<li><a href="#">S'inscrire</a></li>
-				</ul>
-			</nav>
-		</header>
-
-		<section>
-
-		<div id="Barre_de_recherche_et_filtres">
-			<div id="Titre_Barre_de_recherche_et_filtres">
-				<h2>Trouvez votre hébérgement pour des vacances de rêve</h2>
-				<h3>En plein centre ville ou en pleine nature</h3>
-			</div>
-				<form>
-				<p><label i class="fas fa-map-marker-alt"></i><input type="search" name="recherche" placeholder="Où allez-vous ?"/></label>
-				<input type="submit" value="Rechercher"/></p>
-			</form>
-
-			<ul id="Filtres"> 
-				<h3>Filtres</h3>
-					<li><label i class="fas fa-money-bill-wave"></label><a href="#">Economique</a></li>
-					<li><label i class="fas fa-child"></label><a href="#">Familial</a></li>
-					<li><label i class="fas fa-heart"></label><a href="#">Romantique</a></li>
-					<li><label i class="fas fa-dog"></label><a href="#">Animaux autorisés</a></li>
+<!----------logo et menu---------------------------------------->
+<header>
+		<div class="menu_logo">
+			<img class="logo" src="logo/Reservia.svg" alt="logo Reservia"/>
+				<ul class="menu">
+					<li><a class="liste_menu" href="#Hébergements"><span class="menu_effect">Hébergements</span></a></li>
+					<li><a class="liste_menu" href="#Activités"><span class="menu_effect">Activités</span></a></li>
+					<li class="inscription"><a href="#">S'inscrire</a></li>
 				</ul>
 		</div>
-		<!------- info nombre logements disponible------>
-			<div id="disponibilité_logements">
-			<i class="fas fa-info"></i>
-			<p>Plus de 500 logements sont disponibles dans cette ville.</p>
+	</header>
+		
+
+<!----------------------Titres-------------------------------->
+
+	<section>
+		<h2 class="texte_1">Trouvez votre hébergement pour des vacances de rêve</h2>
+		<p class="texte_2">En plein centre ville ou en pleine nature</p> 
+
+<!--------------------Bouton Recherche----------------------->
+
+	<form>
+		<div class="bloc_recherche">
+			<i class="fas fa-map-marker-alt"></i>
+			<input class="barre_recherche" type="search" name="recherche" placeholder="Marseille, France"/>
+			<button class="bouton"><span class="texte_rechercher">Rechercher</span><i class="fas fa-search"></i></button>
+		</div>
+	</form>
+
+<!------------------------------------Filtres-------------------->
+
+			<div class="bloc_filtres">
+				<div class="conteneur_filtres_titres">
+					<p class="titre_filtres">Filtres</p>
+				</div>
+				<div>
+					<a href="#"><p class="filtres"><i class="fas fa-money-bill-wave"></i>Econimique</p></a>
+				</div>
+				<div>
+					<a href="#"><p class="filtres"><i class="fas fa-child"></i>Familial</p></a>
+				</div>
+				<div>
+					<a href="#"><p class="filtres"><i class="fas fa-heart"></i>Romantique</p></a>
+				</div>
+				<div>
+					<a href="#"><p class="filtres"><i class="fas fa-dog"></i>Animaux autorisés</p></a>
+				</div>
 			</div>
 		</section>
 
-		<section id="liste_logements">
-		<!-------- liste des hébergements disponible------>
+<!--------------------info nombre logements disponible---------------->
+
+			<div class="info">
+				<p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+			</div>
+
+<!-------------------- liste des hébergements disponible-------------->
+
+	<section id="liste_logements">
+
 		<div id="Hébergements_Marseille">
 			<h2>Hébergements à Marseille</h2>
 			<div id="logement_dispo_ligne_1">
@@ -165,7 +177,9 @@
 				</div>
 				<p>Affichier plus</p>
 		</div>
-		<!---------- Logements les plus populaires---------->
+
+<!---------------------------- Logements les plus populaires------------------------->
+
 		<aside id="logemnts_populaire">
 			<a href="#">
 				<article id="hotel_soleil_matin">
@@ -218,7 +232,7 @@
 				</article>
 			</a>
 		</aside>
-		</section>
+	</section>
 
 	<!------------------------- Activitées Marseille----------------->
 
@@ -279,7 +293,6 @@
 			</div>	
 		</div>
 	</section>
-	</div>
 
 	<!---------------------Footer------------------------->
 	<footer>
