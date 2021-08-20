@@ -1,13 +1,5 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<link rel="stylesheet" href="style.css"/>
-		<script src="https://kit.fontawesome.com/c80a86d67c.js" crossorigin="anonymous"></script>
-		<title>Reservia</title>
-	</head>
-
-<!----------logo et menu---------------------------------------->
 <header>
 		<div class="menu_logo">
 			<img class="logo" src="logo/Reservia.svg" alt="logo Reservia"/>
@@ -17,10 +9,23 @@
 					<li class="inscription"><a href="#">S'inscrire</a></li>
 				</ul>
 		</div>
-	</header>
+</header>
+
+<body>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css"/>
+		<script src="https://kit.fontawesome.com/c80a86d67c.js" crossorigin="anonymous"></script>
+
+		<title>Reservia</title>
+	</head>
+
+<!----------logo et menu---------------------------------------->
+<section id="pages">
 		
 
 <!----------------------Titres-------------------------------->
+
 
 	<section>
 		<h2 class="texte_1">Trouvez votre hébergement pour des vacances de rêve</h2>
@@ -81,7 +86,7 @@
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
-								<i class="far fa-star"></i>
+								<i class="fas fa-star greystar"></i>
 							</div>
 						</div>
 					</article>
@@ -115,7 +120,7 @@
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
-								<i class="far fa-star"></i>
+								<i class="fas fa-star greystar"></i>
 							</div>
 						</div>
 					</article>
@@ -134,8 +139,8 @@
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
-									<i class="far fa-star"></i>
-									<i class="far fa-star"></i>
+									<i class="fas fa-star greystar"></i>
+									<i class="fas fa-star greystar"></i>
 								</div>
 							</div>
 						</article>
@@ -152,7 +157,7 @@
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
-									<i class="far fa-star"></i>
+									<i class="fas fa-star greystar"></i>
 								</div>
 							</div>
 						</article>
@@ -175,16 +180,24 @@
 						</article>
 					</a>
 				</div>
-				<p>Affichier plus</p>
+				<p>Afficher plus</p>
 		</div>
 
 <!---------------------------- Logements les plus populaires------------------------->
 
 		<aside id="logemnts_populaire">
+
+			<div id="titre_plus_popu">
+				<h2>Les plus populaires</h2>
+				<i class="fas fa-chart-line"></i>
+			</div>
+
+		<div id="liste_logements_populaire">
+
 			<a href="#">
 				<article id="hotel_soleil_matin">
-					<img id="chambre_soleil_matin" src="emile.jpg" alt="Hôtel le soeleil">
-					<div id="informations">
+					<img id="chambre_soleil_matin" src="emile.jpg" alt="Hôtel le soleil">
+					<div class="informations_popu">
 						<h3>Hôtel le soleil du matin</h3>
 						<p>Nuit à partir de 128€</p>
 						<div class="note_etoiles">
@@ -201,7 +214,7 @@
 			<a href="#">
 				<article id="au_coeur_de_leau">
 					<img id="chambre_d'hote_au_coeur_de_leau" src="creative.jpg" alt="chambre au coeur de l'eau/Chambre d'hôtes">
-					<div class="informations">
+					<div class="informations_popu">
 						<h3>Chambre au coeur de l'eau Chambre d'hôtes</h3>
 						<p>Nuit à partir de 71€</p>
 						<div class="note_etoiles">
@@ -209,7 +222,7 @@
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
+							<i class="fas fa-star greystar"></i>
 						</div>
 					</div>
 				</article>
@@ -218,7 +231,7 @@
 			<a href="#">
 				<article id="Hotel_Tout_bleu__blanc">
 					<img id="Tout_bleu_et_Blanc" src="zakaria.jpg" alt="Hôtel Tout bleu et Blanc">
-					<div class="informations">
+					<div class="informations_popu">
 						<h3>Hôtel Tout bleu et Blanc</h3>
 						<p>Nuit à partir de 68€</p>
 						<div class="note_etoiles">
@@ -226,11 +239,12 @@
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
+							<i class="fas fa-star greystar"></i>
 						</div>
 					</div>
 				</article>
 			</a>
+		</div>
 		</aside>
 	</section>
 
@@ -253,14 +267,14 @@
 
 			<div class="activité_double">
 				<a href="#">
-					<article class="double_1">
+					<article class="double">
 						<img src="paul.jpg" alt="Fort de Pomègues">
 						<h3>Fort de Pomègues</h3>
 					</article>
 				</a>
 
 				<a href="#">
-					<article class="double_2">
+					<article class="double">
 						<img src="kevin.jpg" alt="île du Frioul">
 						<h3>Ile du Frioul</h3>
 						</article>
@@ -278,14 +292,14 @@
 
 			<div class="activité_double">
 				<a href="#">
-					<article class="double_3_4">
+					<article class="double">
 						<img src="florian.jpg" alt="Notre-Dame-de-la-Garde">
 						<h3>Notre-de-Dame-de-la-Garde</h3>
 					</article>
 				</a>
 
 				<a href="#">
-					<article class="double_3_4">
+					<article class="double">
 					<img src="lena.jpg" alt="Parc Longchamps">
 					<h3>Parc Longchamps</h3>
 					</article>			
@@ -293,9 +307,12 @@
 			</div>	
 		</div>
 	</section>
+	</section>
+</body>
+<!---------------------Footer------------------------->
 
-	<!---------------------Footer------------------------->
-	<footer>
+<footer>
+	
 	<div id="a_propos">
 		<h3>A propos</h3>
 		<ul>
@@ -320,6 +337,6 @@
 			<li>Nous contacter</li>
 		</ul>
 	</div>
-	</footer>
-</body>
+
+</footer>
 </html>

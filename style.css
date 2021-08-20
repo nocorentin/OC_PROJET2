@@ -1,6 +1,6 @@
 /*-----------------------------Font Face et body--------------------------*/
 
-font-face
+@font-face
 {
 		font-family: 'Raleway';
 		src: url('Raleway/raleway.eot');
@@ -25,10 +25,12 @@ a:visited, a:link, a
 	text-decoration: none;
 	color: initial;
 }
+
 * 
 {
   box-sizing: border-box;
 }
+
 /*-------------------- header--------------------------------*/
 
 .logo
@@ -328,19 +330,25 @@ input:focus
 
 }
 
+#Hébergements_Marseille h3
+{
+	margin-top: 0px;
+	margin-bottom: 1px;
+}
+
 #Hébergements_Marseille article .note_etoiles
 {
 	display: flex;
 }
 
-#Hébergements_Marseille .fa-star
+#Hébergements_Marseille .fas
 {
 	color: #0065FC;
 }
 
-#Hébergements_Marseille 
+#Hébergements_Marseille .greystar
 {
-	
+	color: #DCDCDC;
 }
 
 #Hébergements_Marseille p
@@ -379,11 +387,10 @@ input:focus
 	width: 100%;
 }
 
-#titre_plus_popu h3
+#liste_logements_populaire h3
 {
 	margin-top: 0px;
 	margin-bottom: 0px;
-	font-size: 22px;
 }
 
 #liste_logements_populaire
@@ -416,7 +423,7 @@ input:focus
 	object-fit: cover;
 }
 
-#liste_logements_populaire article .informations
+#liste_logements_populaire article .informations_popu
 {
 	display: flex;
 	flex-direction: column;
@@ -438,14 +445,14 @@ input:focus
 	padding-top: 5px;
 }
 
-#liste_logements_populaire article .fa-star (ETOILE BLEU)
+#liste_logements_populaire article .fas
 {
-
+	color: #0065FC;
 }
 
-#liste_logements_populaire article . ETOILE GRISE
+#liste_logements_populaire article .greystar
 {
-
+	color: #DCDCDC;
 }
 
 
@@ -496,7 +503,7 @@ input:focus
 	border-radius: 22px 22px 22px 22px;
 	box-shadow: 3px 3px 3px #F2F2F2;
 	height: 320px;
-	width: 24%;
+	width: 90%;
 }
 
 .simple img
@@ -535,9 +542,8 @@ footer
 	flex-wrap: wrap;
 	background: #F2F2F2;
 	background-size: cover;
-	margin-left: -30px;
-	margin-right: 70px;
-	margin-bottom: -30px;
+	margin-left: -20px;
+	margin-right: -20px;
 	width: 100%;
 }
 
@@ -569,6 +575,59 @@ footer li
 	list-style: none;
 	padding: 5px;
 }
+
+/*-------------------------------------@Media-----------------------*/
+
+@media all and (max-width:  780px)
+{
+	body
+	{
+		width: 100%;
+	}
+}
+
+@media (min-width: 781px) and (max-width: 900px)
+{
+	body
+	{
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
