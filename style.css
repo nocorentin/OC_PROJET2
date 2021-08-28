@@ -327,6 +327,7 @@ input:focus
 {
 	margin-top: 0px;
 	margin-bottom: 3px;
+	font-size: 90%;
 
 }
 
@@ -390,7 +391,7 @@ input:focus
 #liste_logements_populaire h3
 {
 	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 2px;
 }
 
 #liste_logements_populaire
@@ -431,18 +432,19 @@ input:focus
 	flex: 1 1 60%;
 	padding-left: 10px;
 	padding-top: 5px;
-	font-size: 70%;
+	font-size: 80%;
 }
 
  #liste_logements_populaire article .informations p
 	{
 		margin-top: -2px;
 		margin-bottom: 5px;
+		font-size: 80%;
 	}
 
 #liste_logements_populaire article .note_etoiles
 {
-	padding-top: 5px;
+	padding-top: 3px;
 }
 
 #liste_logements_populaire article .fas
@@ -593,12 +595,101 @@ footer li
 		width: 100%;
 	}
 }
+ 
+ main 
+ {
+ 	margin: 20px;
+ }
 
+@media all and (max-width: 780px)
+{
+	margin-top
+	{
+		width: 100%;
+		margin: 0px;
+	}
+}
 
+@media (min-width: 780px) and (max-width: 1500px)
+{
+	header
+	{
+		width: 100%;
+		padding-left: 0px;
+	}
+}
 
+@media all and (max-width: 780px)
+{
+	header
+	{
+		width: 100%;
+		flex-direction: column;
+		padding-left: 0px;
+	}
+	
+	svg
+	{
+		position: absolute;
+		padding-bottom: 15px;
+		padding-top: 30px;
+	}
 
+	nav
+	{
+		width: 100%;
+		justify-content: left;
+    flex-wrap: wrap-reverse;
+  }
+	
+	#menu_hébergement
+	{
+		width: 50%;
+		text-align: center;
+		padding-bottom: 18px;
+		margin-right: 0px;
+		border-bottom: 3px solid #F2F2F2;
+	}
 
+	#menu_activité
+	{
+		width: 50%;
+		margin-right: 0px;
+		text-align: center;
+		padding-bottom: 18px;
+		border-bottom: 3px solid #F2F2F2;
+	}
 
+	#inscription
+	{
+		margin-left: 80%;
+		padding-top: 20px;
+		justify-content: flex-start;
+	}
+
+	nav #menu_hébergement:hover
+	{																						
+		border-bottom: 3px solid #0065FC ;
+		padding-bottom: 20px;
+		border-top: none;
+	}
+
+	nav #menu_hébergement a:hover
+	{
+		color: #0065FC;
+	}																										
+
+	nav #menu_activité:hover
+	{																										
+		border-bottom: 3px solid #0065FC ;
+		padding-bottom: 20px;
+		border-top: none;
+	}
+
+	nav #menu_activité a:hover
+	{
+		color: #0065FC;
+	}	
 
 
 
